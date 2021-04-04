@@ -13,7 +13,7 @@
 .gallery img{
     transition: 1s;
     padding: 5px;
-    width: 250px;
+    width: 32%;
 	filter: grayscale(100%);
 }
 .gallery img:hover {
@@ -32,13 +32,22 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(125deg, #EE7752,#E73c7E,#23A6D5,#23D5AB);
+	background-size: 100% 100%;
+	animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1321,11 +1330,22 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
-		background-attachment: fixed;
-		overflow-y: scroll;
+		background: linear-gradient(125deg, #faa940,#E73c7E,#23A6D5,#00fff2);
+		background-size: 400% 400%;
+		position: relative;
+		animation: bganimation 10s ease-in-out infinite;
+	}
+
+	@keyframes bganimation {
+		0%{
+			background-position: 0% 20%;
+		}
+		50%{
+			background-position: 100% 50%;
+		}
+		100%{
+			background-position: 0% 20%;
+		}
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
