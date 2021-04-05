@@ -1807,14 +1807,14 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 4.25em;
+		height: 4.40em;
 		cursor: default;
 	}
 
 		#nav a {
 			position: relative;
 			display: inline-block;
-			color: #ffffff;
+			color: #ffffff94;
 			width: 1em;
 			height: 1em;
 			line-height: 0.9em;
@@ -1843,7 +1843,7 @@ input, select, textarea {
 				left: 50%;
 				bottom: -0.75em;
 				margin-left: -0.5em;
-				border-bottom: solid 0em #ffffff;
+				border-bottom: solid 0em rgba(255, 255, 255, 0.10);
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				-moz-transition: border-bottom-width .25s ease-in-out;
@@ -1983,8 +1983,12 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #ffffff;
-		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+		background: rgba(255, 255, 255, 0.22);
+		box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.50);
+		border-radius: 15px;
+		backdrop-filter: blur(5px);
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
