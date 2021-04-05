@@ -1333,7 +1333,7 @@ input, select, textarea {
 		background: linear-gradient(125deg, #faa940,#E73c7E,#23A6D5,#00fff2);
 		background-size: 400% 400%;
 		position: relative;
-		animation: bganimation 10s ease-in-out infinite;
+		animation: bganimation 25s ease-in-out infinite;
 	}
 
 	@keyframes bganimation {
